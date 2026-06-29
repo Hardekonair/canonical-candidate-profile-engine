@@ -1,0 +1,4 @@
+candidate_id,name,email,phone,current_company,current_title
+C001,Hardik Saxena,hardik.saxena@gmail.com,+91 9876543210,Google,Software Engineer
+C002,Riya Sharma,riya.sharma@gmail.com,9876543211,Microsoft,SDE-I
+C003,Aman Verma,aman.verma@gmail.com,+1 202-555-0175,Amazon,Backend Engineer
