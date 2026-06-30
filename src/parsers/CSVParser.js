@@ -2,7 +2,6 @@ import fs from "fs";
 import csv from "csv-parser";
 
 import BaseParser from "./BaseParser.js";
-import Candidate from "../models/Candidate.js";
 
 class CSVParser extends BaseParser {
 
@@ -10,7 +9,7 @@ class CSVParser extends BaseParser {
 
         return new Promise((resolve, reject) => {
 
-            const candidates = [];
+            const rows = [];
 
             fs.createReadStream(filePath)
 
@@ -18,41 +17,23 @@ class CSVParser extends BaseParser {
 
                 .on("data", (row) => {
 
-                    const candidate = new Candidate({
-
-                        candidateId: row.candidate_id,
-
-                        fullName: row.name,
-
-                        emails: row.email
-                            ? [row.email]
-                            : [],
-
-                        phones: row.phone
-                            ? [row.phone]
-                            : [],
-
-                        currentCompany:
-                            row.current_company || "",
-
-                        currentTitle:
-                            row.current_title || ""
-
-                    });
-
-                    candidates.push(candidate);
+                    rows.push(row);
 
                 })
 
                 .on("end", () => {
 
-                    resolve(candidates);
+                    resolve(rows);
 
                 })
 
-                .on("error", (err) => {
+                .on("error", (error) => {
 
-                    reject(err);
+                    reject(
+                        new Error(
+                            `CSV Parsing Failed: ${error.message}`
+                        )
+                    );
 
                 });
 
