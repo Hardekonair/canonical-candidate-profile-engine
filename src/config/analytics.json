@@ -1,0 +1,11 @@
+{
+    "fields": [
+        "skills",
+        "education",
+        "experience",
+        "certifications",
+        "languages"
+    ],
+    "includeConfidence": false,
+    "includeProvenance": false
+}

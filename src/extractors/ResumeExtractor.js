@@ -1,5 +1,6 @@
 import Candidate from "../models/Candidate.js";
 import GeminiExtractor from "../llm/GeminiExtractor.js";
+import PhoneNormalizer from "../utils/PhoneNormalizer.js";
 
 class ResumeExtractor {
 
@@ -11,11 +12,21 @@ class ResumeExtractor {
 
             candidateId: null,
 
-            fullName: data.fullName || "",
+            fullName:
+                data.fullName
+                    ? data.fullName
+                        .toLowerCase()
+                        .replace(
+                            /\b\w/g,
+                            char => char.toUpperCase()
+                        )
+                    : "",
 
             emails: data.emails || [],
 
-            phones: data.phones || [],
+            phones: PhoneNormalizer.normalizeArray(
+                data.phones || []
+            ),
 
             currentCompany: data.currentCompany || "",
 
