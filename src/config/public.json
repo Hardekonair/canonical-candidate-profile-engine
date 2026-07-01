@@ -1,0 +1,10 @@
+{
+    "fields": [
+        "fullName",
+        "summary",
+        "projects",
+        "links"
+    ],
+    "includeConfidence": false,
+    "includeProvenance": false
+}

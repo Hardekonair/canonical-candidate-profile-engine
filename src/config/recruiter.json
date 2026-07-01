@@ -1,0 +1,14 @@
+{
+    "fields": [
+        "candidateId",
+        "fullName",
+        "emails",
+        "phones",
+        "currentCompany",
+        "currentTitle",
+        "skills",
+        "location"
+    ],
+    "includeConfidence": true,
+    "includeProvenance": true
+}

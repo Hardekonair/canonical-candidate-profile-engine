@@ -1,4 +1,5 @@
 import Candidate from "../models/Candidate.js";
+import PhoneNormalizer from "../utils/PhoneNormalizer.js";
 
 class CSVExtractor {
 
@@ -17,7 +18,7 @@ class CSVExtractor {
                     : [],
 
                 phones: row.phone
-                    ? [row.phone]
+                    ?  PhoneNormalizer.normalizeArray([row.phone])
                     : [],
 
                 currentCompany:
