@@ -351,19 +351,92 @@ publicProfile.json
 
 # How to Run
 
-Install dependencies
+## Prerequisites
+
+Before running the project, ensure the following software is installed:
+
+| Requirement | Version |
+|-------------|---------|
+| Node.js | v18 or later |
+| npm | v9 or later |
+| Git | Latest |
+
+---
+
+## Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/Hardekonair/canonical-candidate-profile-engine.git
+
+cd canonical-candidate-profile-engine
+```
+
+---
+
+## Step 2: Install Dependencies
+
+Install all required Node.js packages.
 
 ```bash
 npm install
 ```
 
-Run
+---
+
+## Step 3: Configure Environment Variables
+
+Create a `.env` file in the project root.
+
+Example:
+
+```env
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+```
+
+Replace `YOUR_GEMINI_API_KEY` with your Google Gemini API key.
+
+---
+
+## Step 4: Prepare Input Files
+
+Place the required input files inside the `input/` directory.
+
+```
+input/
+├── recruiter.csv
+└── resume.pdf
+```
+
+The current implementation expects:
+
+- `input/recruiter.csv`
+- `input/resume.pdf`
+
+---
+
+## Step 5: Run the Pipeline
+
+Execute:
 
 ```bash
 node src/main.js
 ```
 
 ---
+
+## Step 6: Generated Outputs
+
+After successful execution, the pipeline generates:
+
+```
+output/
+├── canonicalCandidate.json
+├── recruiterView.json
+├── analyticsView.json
+└── publicProfile.json
+```
+
+These files contain the transformed candidate data in different consumer-specific views.
 
 # Sample Console Output
 
@@ -388,6 +461,52 @@ node src/main.js
  Pipeline Completed Successfully
 ==================================================
 ```
+
+# Sample Canonical Candidate Output
+
+```json
+{
+  "candidateId": "C001",
+  "fullName": "Hardik Saxena",
+  "emails": [
+    "hardik.saxena@gmail.com"
+  ],
+  "phones": [
+    "+919876543210"
+  ],
+  "currentCompany": "Google",
+  "currentTitle": "Software Engineer",
+  "skills": [
+    "C++",
+    "Java",
+    "JavaScript",
+    "React",
+    "Node.js",
+    "MongoDB"
+  ],
+  "location": "Greater Noida, Uttar Pradesh, India",
+  "confidence": {
+    "fullName": 1.0,
+    "emails": 1.0,
+    "phones": 1.0
+  },
+  "provenance": {
+    "fullName": ["csv", "resume"],
+    "emails": ["csv", "resume"],
+    "phones": ["csv", "resume"]
+  }
+}
+```
+
+
+# Output Files
+
+| File                     | Description                                                         |
+|--------------------------|---------------------------------------------------------------------|
+| canonicalCandidate.json  | Complete canonical candidate profile with confidence and provenance |
+| recruiterView.json       | Recruiter-focused projection                                        |
+| analyticsView.json       | Analytics-oriented projection                                       |
+| publicProfile.json       | Public profile projection                                           |
 
 ---
 
