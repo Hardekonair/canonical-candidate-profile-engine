@@ -1,0 +1,127 @@
+{
+    "candidateId": "C001",
+    "fullName": "Hardik Saxena",
+    "emails": [
+        "hardik.saxena@gmail.com"
+    ],
+    "phones": [
+        "+919876543210"
+    ],
+    "currentCompany": "Google",
+    "currentTitle": "Software Engineer",
+    "skills": [
+        "C++",
+        "Java",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "MySQL",
+        "Git",
+        "Docker",
+        "AWS"
+    ],
+    "location": "Greater Noida, Uttar Pradesh, India",
+    "confidence": {
+        "candidateId": 0.8,
+        "fullName": 1,
+        "emails": 1,
+        "phones": 1,
+        "currentCompany": 1,
+        "currentTitle": 1,
+        "location": 0.9,
+        "summary": 0.9,
+        "skills": 0.9,
+        "education": 0.9,
+        "experience": 0.9,
+        "projects": 0.9,
+        "certifications": 0.9,
+        "languages": 0.9,
+        "links": 0.9
+    },
+    "provenance": {
+        "candidateId": {
+            "sources": [
+                "csv"
+            ]
+        },
+        "fullName": {
+            "sources": [
+                "csv",
+                "resume"
+            ]
+        },
+        "emails": {
+            "sources": [
+                "csv",
+                "resume"
+            ]
+        },
+        "phones": {
+            "sources": [
+                "csv",
+                "resume"
+            ]
+        },
+        "currentCompany": {
+            "sources": [
+                "csv",
+                "resume"
+            ]
+        },
+        "currentTitle": {
+            "sources": [
+                "csv",
+                "resume"
+            ]
+        },
+        "location": {
+            "sources": [
+                "resume"
+            ]
+        },
+        "summary": {
+            "sources": [
+                "resume"
+            ]
+        },
+        "skills": {
+            "sources": [
+                "resume"
+            ]
+        },
+        "education": {
+            "sources": [
+                "resume"
+            ]
+        },
+        "experience": {
+            "sources": [
+                "resume"
+            ]
+        },
+        "projects": {
+            "sources": [
+                "resume"
+            ]
+        },
+        "certifications": {
+            "sources": [
+                "resume"
+            ]
+        },
+        "languages": {
+            "sources": [
+                "resume"
+            ]
+        },
+        "links": {
+            "sources": [
+                "resume"
+            ]
+        }
+    }
+}

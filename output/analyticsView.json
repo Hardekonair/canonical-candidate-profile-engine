@@ -1,0 +1,43 @@
+{
+    "skills": [
+        "C++",
+        "Java",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "MySQL",
+        "Git",
+        "Docker",
+        "AWS"
+    ],
+    "education": [
+        {
+            "degree": "Bachelor of Technology in Computer Science",
+            "institution": "GL Bajaj Institute of Technology and Management",
+            "startYear": "2022",
+            "endYear": "2026"
+        }
+    ],
+    "experience": [
+        {
+            "company": "Google",
+            "title": "Software Engineer",
+            "startDate": "",
+            "endDate": "",
+            "description": "Worked on backend APIs, database optimization, authentication systems, RESTful services, and cloud deployment. Improved application performance and collaborated with cross - functional teams to deliver scalable software solutions."
+        }
+    ],
+    "certifications": [
+        "Google Cloud Arcade",
+        "MongoDB Basics",
+        "Git & GitHub"
+    ],
+    "languages": [
+        "English",
+        "Hindi"
+    ]
+}

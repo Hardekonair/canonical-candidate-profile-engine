@@ -1,0 +1,23 @@
+{
+    "fullName": "Hardik Saxena",
+    "summary": "Passionate Full Stack Developer with strong problem - solving skills and hands - on experience in designing scalable web applications using the MERN stack. Skilled in JavaScript, React, Node.js, Express.js, MongoDB, and SQL. Enthusiastic about building clean backend architectures and continuously improving software quality.",
+    "projects": [
+        {
+            "title": "AI Interview Coach",
+            "description": "Developed a MERN - based AI Interview Coach that records interview sessions, analyzes candidate responses, generates transcripts, evaluates communication skills, and provides AI - powered feedback with confidence analysis.",
+            "technologies": [
+                "MERN"
+            ]
+        },
+        {
+            "title": "Canonical Candidate Profile Engine",
+            "description": "Designed a data transformation engine capable of parsing recruiter CSV files and resume PDFs, normalizing candidate information, merging duplicate profiles, tracking provenance, calculating confidence scores, and generating configurable output schemas.",
+            "technologies": []
+        }
+    ],
+    "links": {
+        "github": "https://github.com/hardik - saxena",
+        "linkedin": "https://www.linkedin.com/in/hardik - saxena",
+        "portfolio": ""
+    }
+}
