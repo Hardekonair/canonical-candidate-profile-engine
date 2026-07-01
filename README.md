@@ -74,6 +74,11 @@ output/
 ├── recruiterView.json
 ├── analyticsView.json
 └── publicProfile.json
+
+docs/
+|
+├── candidateSchema.md
+├── pipeline.md
 ```
 
 ---
