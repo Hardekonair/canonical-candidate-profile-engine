@@ -390,7 +390,7 @@ Create a `.env` file in the project root.
 Example:
 
 ```env
-GEMINI_API_KEY=AQ.Ab8RN6KK276Gc1vqwHiwvAGN1ms--1kEOYLbg6fxY06S49Dz5A
+GEMINI_API_KEY=<YOUR_gemini_API_KEY>
 ```
 
 
