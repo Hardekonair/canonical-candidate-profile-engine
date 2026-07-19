@@ -540,8 +540,5 @@ These files contain the transformed candidate data in different consumer-specifi
 - ✅ JSON Output Generation
 
 ---
-
-## Repository
-
-This project was developed as part of the **Eightfold Engineering Internship Assignment** demonstrating the design and implementation of a modular **Canonical Candidate Profile Engine**.
+ 
 
